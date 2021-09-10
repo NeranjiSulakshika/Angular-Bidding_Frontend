@@ -23,6 +23,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule} from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     PostComponent,
     UserProfileComponent,
     OrganizationProfileComponent,
-    ChatComponent
+    ChatComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
