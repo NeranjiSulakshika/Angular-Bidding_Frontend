@@ -8,7 +8,7 @@
         <tr>
             <th>
                 <div class="">
-                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="FirstName"
+                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="First name"
                         required>
                 </div>
             </th>
@@ -33,7 +33,7 @@
         </tr>
         <tr>
             <th>
-                <select aria-label="Day" name="birthday_day" id="day" title="Day" class="_9407 _5dba _9hk6 _8esg">
+                <select aria-label="Day" name="birthday_day" id="day" title="Day" class="form-control">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -68,8 +68,7 @@
                 </select>
             </th>
             <th>
-                <select aria-label="Month" name="birthday_month" id="month" title="Month"
-                    class="_9407 _5dba _9hk6 _8esg">
+                <select aria-label="Month" name="birthday_month" id="month" title="Month" class="form-control">
                     <option value="1">Jan</option>
                     <option value="2">Feb</option>
                     <option value="3">Mar</option>
@@ -85,7 +84,7 @@
                 </select>
             </th>
             <th>
-                <select aria-label="Year" name="birthday_year" id="year" title="Year" class="_9407 _5dba _9hk6 _8esg">                    
+                <select aria-label="Year" name="birthday_year" id="year" title="Year" class="form-control">
                     <option value="2004">2004</option>
                     <option value="2003">2003</option>
                     <option value="2002">2002</option>
@@ -191,31 +190,33 @@
         </tr>
         <tr>
             <th>
-                <span class="_5k_2 _5dba"><label class="_58mt" for="u_y_2_Go">Male</label><input type="radio" class="_8esa" name="sex" value="1" id="u_y_2_Go"></span>
+                <span class="form-control" id="male">
+                    <label class="_58mt" for="u_y_2_Go" id="lblMale">Male</label>
+                    <input type="radio" class="inputMale" name="sex" value="1" id="u_y_2_Go">
+                </span>
             </th>
             <th>
-                <span class="_5k_2 _5dba"><label class="_58mt" for="u_y_2_Go">Female</label><input type="radio" class="_8esa" name="sex" value="1" id="u_y_2_Go"></span>
+                <span class="form-control" id="female">
+                    <label class="_58mt" for="u_y_2_Go" id="lblFemale">Female</label>
+                    <input type="radio" class="inputFemale" name="sex" value="1" id="u_y_2_Go">
+                </span>
             </th>
             <th>
-                <span class="_5k_2 _5dba"><label class="_58mt" for="u_y_2_Go">Female</label><input type="radio" class="_8esa" name="sex" value="1" id="u_y_2_Go"></span>
+                <span class="form-control" id="custom">
+                    <label class="_58mt" for="u_y_2_Go" id="lblCustom">Custom</label>
+                    <input type="radio" class="inputCustom" name="sex" value="1" id="u_y_2_Go">
+                </span>
             </th>
         </tr>
         <tr>
             <div class="">
-                <button class="btn btn-primary" id="createBtn" type="submit">Create New Account</button>
-            </div>
-        </tr>
-        <tr>
-            <div class="">
-                <a href="#" id="forgottenPassword">Forgotten password?</a>
+                <button class="btn btn-primary" [routerLink]="['/home']" id="createBtn" type="submit">Sign Up</button>
             </div>
         </tr>
         <div class="line"></div>
         <tr>
             <div class="">
-                <button class="btn btn-primary" id="loginBtn" type="submit">
-                    <a href="home" id="loginBtnLink">Log In</a>
-                </button>
+                <button class="btn btn-primary" [routerLink]="['/login']" id="loginBtn" type="submit">Log In</button>
             </div>
         </tr>
     </form>

@@ -17,9 +17,7 @@
             </tr>
             <tr>
                 <div class="">
-                  <button class="btn btn-primary" id="loginBtn" type="submit">
-                    <a href="home" id="loginBtnLink" >Log In</a>
-                </button>
+                    <button class="btn btn-primary" [routerLink]="['/home']" id="loginBtn" type="submit">Log In</button>
                 </div>
             </tr>          
             <tr>
@@ -30,7 +28,7 @@
             <div class="line"></div>        
             <tr>
                 <div class="">
-                  <button class="btn btn-primary" id="createBtn" type="submit">Create New Account</button>
+                  <button class="btn btn-primary" [routerLink]="['/register']" id="createBtn" type="submit">Create New Account</button>
                 </div>
             </tr>  
         </form>
