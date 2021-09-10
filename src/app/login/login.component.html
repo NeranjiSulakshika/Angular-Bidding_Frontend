@@ -4,20 +4,28 @@
     </div>   
 
     <div class="_4bl7 _9ji4">
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" novalidate [formGroup]="form" (ngSubmit)="onSubmit()">
             <tr> 
                 <div class="">
-                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Email address" required>
+                    <input type="text" class="form-control" id="validationCustom01" [ngClass]="{ 'is-invalid' : submitted && f.email.errors }" placeholder="Email address" required>
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                    </div>
                 </div>
             </tr>
             <tr>
                 <div class="">
-                    <input type="password" class="form-control" id="validationCustom02" value="" placeholder="Password" required>
+                    <input type="text" class="form-control" id="validationCustom02" [ngClass]="{ 'is-invalid': submitted && f.password.errors}" placeholder="Password" required>
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                    </div>
                   </div>  
             </tr>
             <tr>
                 <div class="">
-                    <button class="btn btn-primary" [routerLink]="['/home']" id="loginBtn" type="submit">Log In</button>
+                  <button class="btn btn-primary" id="loginBtn" type="submit">
+                    <a href="home" id="loginBtnLink" >Log In</a>
+                </button>
                 </div>
             </tr>          
             <tr>
@@ -28,7 +36,7 @@
             <div class="line"></div>        
             <tr>
                 <div class="">
-                  <button class="btn btn-primary" [routerLink]="['/register']" id="createBtn" type="submit">Create New Account</button>
+                  <button class="btn btn-primary" id="createBtn" routerLink="/register" type="submit">Create New Account</button>
                 </div>
             </tr>  
         </form>
