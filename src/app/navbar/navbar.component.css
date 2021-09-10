@@ -1,0 +1,76 @@
+
+.navbar {
+    background-color: #bfe6ff;
+}
+
+.d-flex {
+    margin-right: 65%;
+}
+
+.logo {
+    width: 40px;
+}
+
+.btn-outline-success, .btn-outline-success:hover {
+    color: #BFE6FF;
+    border-color: #099eff;
+    background-color: #099eff;
+}
+
+.navItems {
+    margin-left: -150px;
+}
+
+.btn-outline-success {
+    color: #BFE6FF;
+    border-color: #BFE6FF;
+}
+
+#searchBar {
+    border-color: #BFE6FF;
+    background-color: #BFE6FF;
+    width: 400px;
+}
+
+.homeBtn, .messageBtn, .notificationBtn {
+    background-color: #BFE6FF;
+    border: none;
+    width: 60px;
+}
+
+#dropdown {
+    background-color: #BFE6FF;
+    width: 55px;
+    border: none;
+    color: #BFE6FF;
+}
+
+.dropdown-toggle::after {
+    color: #BFE6FF;
+}
+.rounded-circle {
+    margin-top: -10px;
+}
+
+.rounded-circle {
+    margin-top: -10px;
+    border: none;
+    background-color: #BFE6FF;
+}
+
+.dropdown-menu.show {
+    margin-left: -135px;
+}
+
+.dropdown-item:hover {
+    background-color: #BFE6FF;
+}
+
+.line {
+    border: 1px solid #2a90cf;
+    border-style: dashed;
+    width: 87%;
+    margin-left: 10px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}

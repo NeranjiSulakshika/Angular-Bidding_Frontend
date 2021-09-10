@@ -1,0 +1,76 @@
+<!-- <mat-toolbar>
+  <span>My Application</span>
+</mat-toolbar> -->
+
+<!-- <p>navbar works!</p>
+<div class="WholeThing">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand"  routerLink="login">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page"  routerLink="home"> <fa-icon [icon]="faHome"></fa-icon></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="login">Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="home">Notification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="login">Profile</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</div> -->
+
+
+<nav class="navbar navbar-light">
+  <div class="container-fluid">
+
+    <img src="https://www.freeiconspng.com/uploads/profile-icon-1.png"  class="logo">
+
+    <form class="d-flex">
+      <button class="btn btn-outline-success" type="submit">
+        <fa-icon [icon]="faSearch"></fa-icon>
+      </button>
+      <input class="form-control me-2" id="searchBar" type="search" placeholder="" aria-label="Search">
+    </form>
+
+    <div class="navItems">
+      <button class="homeBtn" [routerLink]="['/home']">
+        <fa-icon [icon]="faHome" size="2x"></fa-icon>
+      </button>
+
+      <button class="messageBtn" [routerLink]="['/organizationProfile']">
+        <fa-icon [icon]="faCommentAlt" size="2x"></fa-icon>
+      </button>
+
+      <button class="notificationBtn"  [routerLink]="['/login']">
+        <fa-icon [icon]="faBell" size="2x"></fa-icon>
+      </button>       
+
+      <div ngbDropdown class="d-inline-block" id="dropdown">
+        <button class="img-fluid rounded-circle z-depth-0" id="dropdownBasic1" ngbDropdownToggle>
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="img-fluid rounded-circle z-depth-0">
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" dropdown-menu-left>
+          <button ngbDropdownItem [routerLink]="['/profile']">Profile</button>
+          <button ngbDropdownItem [routerLink]="['/login']">Switch Accounts</button>
+          <button ngbDropdownItem [routerLink]="['/login']">Settings & Privacy</button>
+          <button ngbDropdownItem [routerLink]="['/login']">Help & Support</button>
+          <button ngbDropdownItem [routerLink]="['/login']">Display Mode</button>
+          <button ngbDropdownItem [routerLink]="['/login']">Create Organization</button>
+          <div class="line"></div>
+          <button ngbDropdownItem [routerLink]="['/login']">Login/Logout</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+

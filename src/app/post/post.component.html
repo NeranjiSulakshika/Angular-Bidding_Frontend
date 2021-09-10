@@ -1,0 +1,91 @@
+<p>post works!</p>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn col-lg-6 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#post">
+    Post Something!    
+  </button>
+  
+    
+  
+    <!-- Modal -->
+    <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <ul class="nav nav-tabs">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#blog" type="button"
+                  role="tab" aria-controls="blog" aria-selected="true">
+                  Blog
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#offer" type="button"
+                  role="tab" aria-controls="offer" aria-selected="false">
+                  Offer
+                </button>
+              </li>
+            </ul>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="tab-content">
+            <div id="blog" class="tab-pane fade show active" role="tabpanel" aria-labelledby="blog-tab">
+              <div *ngTemplateOutlet="blogPage"></div>
+            </div>
+            <div id="offer" class="tab-pane fade" role="tabpanel" aria-labelledby="offer-tab">
+              <div *ngTemplateOutlet="offerPage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    
+    <!--Blog-->
+    <ng-template #blogPage>
+      <form>
+        <div class="btn-group">
+          <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Type
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>------</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-outline-primary">Upload</button>
+        </div>
+      </form> 
+    </ng-template>
+  
+  
+  
+    <!--Offer-->
+    <ng-template #offerPage>
+      <form>
+        <div class="btn-group">
+          <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Type
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Organization Profile Name</a></li>
+            <li><a class="dropdown-item" href="#">Own Profile</a></li>
+          </ul>
+        </div>
+        <div class="modal-body">
+          <h1>------</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-outline-primary">Upload</button>
+        </div>
+      </form> 
+    </ng-template>
+  
+  
+  
+  
+    
+  

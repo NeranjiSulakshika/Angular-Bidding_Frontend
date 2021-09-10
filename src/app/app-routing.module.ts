@@ -1,7 +1,37 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Component, NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PostComponent } from './post/post.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { OrganizationProfileComponent } from './organization-profile/organization-profile.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path:'home', 
+    component: HomeComponent
+  },
+  {
+    path:'login', 
+    component: LoginComponent
+  },
+  {
+    path:'navbar', 
+    component: NavbarComponent
+  },
+  {
+    path:'post', 
+    component: PostComponent
+  },
+  {
+    path:'profile', 
+    component: UserProfileComponent
+  },
+  {
+    path:'organizationProfile', 
+    component: OrganizationProfileComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
