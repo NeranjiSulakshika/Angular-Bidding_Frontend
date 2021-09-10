@@ -4,31 +4,31 @@
 </div>
 
 <div class="_4bl7 _9ji4">
-    <form class="row g-3 needs-validation" novalidate>
+    <form class="row g-3 needs-validation" #UserRegistrationForm="ngForm" (ngSubmit)="onSubmit(UserRegistrationForm)" autocomplete="off">
         <tr>
             <th>
                 <div class="">
-                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="First name"
+                    <input type="text" class="validate form-control" id="validationCustom01" value="" #FirstName="ngModel" [(ngModel)]="user.FirstName" name="FirstName" placeholder="First name"
                         required>
                 </div>
             </th>
             <th>
                 <div class="">
-                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Surname"
+                    <input type="text" class="validate form-control" id="validationCustom01" value="" #SurName="ngModel" [(ngModel)]="user.SurName" name="SurName" placeholder="Surname"
                         required>
                 </div>
             </th>
         </tr>
         <tr>
             <div class="">
-                <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Email Address"
-                    required>
+                <input type="text" class="validate form-control" id="validationCustom02" value="" #Email="ngModel" [(ngModel)]="user.Email" name="Email" placeholder="Email Address"
+                    required [pattern]="emailPattern">
             </div>
         </tr>
         <tr>
             <div class="">
-                <input type="password" class="form-control" id="validationCustom02" value="" placeholder="Password"
-                    required>
+                <input type="password" class="validate form-control" id="validationCustom02" value="" #Password="ngModel" [(ngModel)]="user.Password" name="Password" placeholder="Password"
+                    required minlength="3">
             </div>
         </tr>
         <tr>
@@ -210,7 +210,7 @@
         </tr>
         <tr>
             <div class="">
-                <button class="btn btn-primary" [routerLink]="['/home']" id="createBtn" type="submit">Sign Up</button>
+                <button class="btn btn-primary" [disabled]="!UserRegistrationForm.valid" id="createBtn" type="submit">Sign Up</button>
             </div>
         </tr>
         <div class="line"></div>

@@ -24,18 +24,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule} from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RegisterComponent } from './register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    RegisterComponent,
     LoginComponent,
     NavbarComponent,
     PostComponent,
     UserProfileComponent,
     OrganizationProfileComponent,
-    ChatComponent,
-    RegisterComponent
+    ChatComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +53,8 @@ import { RegisterComponent } from './register/register.component';
     BrowserAnimationsModule,
     FormsModule,
     MDBBootstrapModule,
+    HttpClientModule,
+    ToastrModule.forRoot(),
 
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
