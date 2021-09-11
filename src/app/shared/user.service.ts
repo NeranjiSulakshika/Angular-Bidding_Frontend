@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { HttpResponse, HttpClientModule } from '@angular/common/http';
-import {  observable } from 'rxjs';
-import { map, catchError, retry } from 'rxjs/operators';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { User } from './user.model';
 
 

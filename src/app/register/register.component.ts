@@ -24,13 +24,13 @@ export class RegisterComponent implements OnInit {
 
   user: any = {};
 
-  // registrationForm!: FormGroup;
+  registrationForm!: FormGroup;
 
   constructor(private userService: UserService, private toastr: ToastrService, private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.resetForm();
-    // this.createRegistraionForm();
+    //this.createRegistraionForm();
   }
 
   resetForm(form?:NgForm)
@@ -46,17 +46,20 @@ export class RegisterComponent implements OnInit {
       'Bday': '',
       'Bmonth': '',
       'Byear': '',
-      'Gender': '',
-      'cGender': ''
+      'Gender': ''
     }
   }
 
   // createRegistraionForm() {
   //   this.registrationForm = this.formBuilder.group({
-  //     FirstName: [new Date(), Validators.required],
+  //     FirstName: [null, Validators.required],
   //     SurName: [null, Validators.required],
   //     Email: [null, Validators.required],
-  //     Password: [null, Validators.required]
+  //     Password: [null, Validators.required],
+  //     Bday: [null, Validators.required],
+  //     Bmonth: [null, Validators.required],
+  //     Byear: [null, Validators.required],
+  //     Gender: [null, Validators.required]
   //   })
   // }
 
@@ -76,9 +79,29 @@ export class RegisterComponent implements OnInit {
   // {
   //   return this.registrationForm.get('Password') as FormControl;
   // }
+  // get Bday()
+  // {
+  //   return this.registrationForm.get('Bday') as FormControl;
+  // }
+  // get Bmonth()
+  // {
+  //   return this.registrationForm.get('Bmonth') as FormControl;
+  // }
+  // get Byear()
+  // {
+  //   return this.registrationForm.get('Byear') as FormControl;
+  // }
+  // get Gender()
+  // {
+  //   return this.registrationForm.get('Gender') as FormControl;
+  // }
 
   onSubmit(form: NgForm) {
     console.log(this.user);
+    // console.log(this.registrationForm.value);
+    // this.user = Object.assign(this.user, this.registrationForm.value);
+    // localStorage.setItem('Users', JSON.stringify(this.user));
+
     // this.userService.registerUser(form.value)
     // .subscribe((data:any)=> {
     //   if(data.Succeeded == true)
