@@ -3,4 +3,8 @@ export class User {
     'SurName': '';
     'Email': '';
     'Password': '';
+    'Bday': '';
+    'Bmonth': '';
+    'Byear': '';
+    'Gender': '';
 }

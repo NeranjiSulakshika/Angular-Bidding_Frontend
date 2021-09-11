@@ -21,7 +21,7 @@ import { ChatComponent } from './chat/chat.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -53,6 +53,8 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     FormsModule,
     MDBBootstrapModule,
+    ReactiveFormsModule,
+
     HttpClientModule,
     ToastrModule.forRoot(),
 
