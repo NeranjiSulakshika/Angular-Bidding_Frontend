@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { OrganizationProfileComponent } from './organization-profile/organization-profile.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   { path:'home', 
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path:'organizationProfile', 
     component: OrganizationProfileComponent
+  },
+  {
+    path:'blog', 
+    component: BlogComponent
   }
 ];
 

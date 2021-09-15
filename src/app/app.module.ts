@@ -26,6 +26,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
+import { BlogComponent } from './blog/blog.component';
+import {MatInputModule} from '@angular/material/input';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +41,8 @@ import { ToastrModule } from 'ngx-toastr';
     PostComponent,
     UserProfileComponent,
     OrganizationProfileComponent,
-    ChatComponent
+    ChatComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +59,8 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     MDBBootstrapModule,
     ReactiveFormsModule,
+    MatInputModule,
+    AngularEditorModule,
 
     HttpClientModule,
     ToastrModule.forRoot(),

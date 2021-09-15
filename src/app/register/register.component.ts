@@ -17,20 +17,32 @@ import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angula
 })
 export class RegisterComponent implements OnInit {
 
+  registrationForm!: FormGroup;
+
+  user: any = {};
+
   loading = false;
 
   // 'user': User;
   'emailPattern': "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
 
-  user: any = {};
-
-  registrationForm!: FormGroup;
-
   constructor(private userService: UserService, private toastr: ToastrService, private router: Router, private formBuilder: FormBuilder) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
     this.resetForm();
-    //this.createRegistraionForm();
+
+    // this.registrationForm = new FormGroup({
+    //   FirstName: new FormControl(null, Validators.required),
+    //   SurName: new FormControl(null, Validators.required),
+    //   Email: new FormControl(null, Validators.required),
+    //   Password: new FormControl(null, Validators.required),
+    //   Bday: new FormControl(null, Validators.required),
+    //   Bmonth: new FormControl(null, Validators.required),
+    //   Byear: new FormControl(null, Validators.required),
+    //   Gender: new FormControl(null, Validators.required)
+    // })
+    this.createRegistraionForm();
   }
 
   resetForm(form?:NgForm)
@@ -50,57 +62,57 @@ export class RegisterComponent implements OnInit {
     }
   }
 
-  // createRegistraionForm() {
-  //   this.registrationForm = this.formBuilder.group({
-  //     FirstName: [null, Validators.required],
-  //     SurName: [null, Validators.required],
-  //     Email: [null, Validators.required],
-  //     Password: [null, Validators.required],
-  //     Bday: [null, Validators.required],
-  //     Bmonth: [null, Validators.required],
-  //     Byear: [null, Validators.required],
-  //     Gender: [null, Validators.required]
-  //   })
-  // }
+  createRegistraionForm() {
+    this.registrationForm = this.formBuilder.group({
+      FirstName: [null, Validators.required],
+      SurName: [null, Validators.required],
+      Email: [null, Validators.required],
+      Password: [null, Validators.required],
+      Bday: [null, Validators.required],
+      Bmonth: [null, Validators.required],
+      Byear: [null, Validators.required],
+      Gender: [null, Validators.required]
+    })
+  }
 
-  // get FirstName()
-  // {
-  //   return this.registrationForm.get('FirstName') as FormControl;
-  // }
-  // get SurName()
-  // {
-  //   return this.registrationForm.get('SurName') as FormControl;
-  // }
-  // get Email()
-  // {
-  //   return this.registrationForm.get('Email') as FormControl;
-  // }
-  // get Password()
-  // {
-  //   return this.registrationForm.get('Password') as FormControl;
-  // }
-  // get Bday()
-  // {
-  //   return this.registrationForm.get('Bday') as FormControl;
-  // }
-  // get Bmonth()
-  // {
-  //   return this.registrationForm.get('Bmonth') as FormControl;
-  // }
-  // get Byear()
-  // {
-  //   return this.registrationForm.get('Byear') as FormControl;
-  // }
-  // get Gender()
-  // {
-  //   return this.registrationForm.get('Gender') as FormControl;
-  // }
+  get FirstName()
+  {
+    return this.registrationForm.get('FirstName') as FormControl;
+  }
+  get SurName()
+  {
+    return this.registrationForm.get('SurName') as FormControl;
+  }
+  get Email()
+  {
+    return this.registrationForm.get('Email') as FormControl;
+  }
+  get Password()
+  {
+    return this.registrationForm.get('Password') as FormControl;
+  }
+  get Bday()
+  {
+    return this.registrationForm.get('Bday') as FormControl;
+  }
+  get Bmonth()
+  {
+    return this.registrationForm.get('Bmonth') as FormControl;
+  }
+  get Byear()
+  {
+    return this.registrationForm.get('Byear') as FormControl;
+  }
+  get Gender()
+  {
+    return this.registrationForm.get('Gender') as FormControl;
+  }
 
   onSubmit(form: NgForm) {
     console.log(this.user);
     // console.log(this.registrationForm.value);
     // this.user = Object.assign(this.user, this.registrationForm.value);
-    // localStorage.setItem('Users', JSON.stringify(this.user));
+    // this.registrationForm.reset();
 
     // this.userService.registerUser(form.value)
     // .subscribe((data:any)=> {
@@ -130,5 +142,7 @@ export class RegisterComponent implements OnInit {
     // this.user = Object.assign(this.user, this.registrationForm.value);
     // localStorage.setItem('Users', JSON.stringify(this.user));
   }
+
+  
 
 }
