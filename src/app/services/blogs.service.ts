@@ -37,4 +37,18 @@ export class BlogsService {
       );
     });
   }
+
+  updateBlog(blogsData:any) {
+    return new Promise<any>((resolve, reject)=> {
+      this.http.put('http://localhost:3000/blogs/' + blogsData.id, blogsData).subscribe(
+        (res)=> {
+          resolve(res);
+        },
+        (err)=> {
+          reject(err);
+        }
+      );
+    });
+  }
+
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { Router } from '@angular/router';
 import { faGlobe, faHeart, faComment, faDownload, faBookmark, faShareAlt } from '@fortawesome/free-solid-svg-icons';
@@ -19,6 +19,11 @@ export class HomeComponent implements OnInit {
   faShareAlt = faShareAlt;
 
   nav = NavbarComponent;
+
+  
+username:string = "";
+title:string = "";
+content:string = "";
 
   constructor(private router: Router, public blogService:BlogsService) { }
 

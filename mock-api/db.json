@@ -2,24 +2,35 @@
   "blogs": [
     {
       "author": "Neranji",
-      "title": "Test Blog",
-      "content": "<h3>Hi,</h3><h4>This is my <b>test blog</b>...</h4>",
-      "comments": [],
+      "title": "Blog 1",
+      "content": "This is my 1st blog",
+      "comments": [
+        {
+          "username": "Sulakshika",
+          "comment": "1st Comment"
+        },
+        {
+          "username": "Neranji",
+          "comment": "2nd Comment"
+        }
+      ],
       "id": 1
     },
     {
-      "author": "Nera",
-      "title": "Blog2",
-      "content": "My 2nd Blog",
-      "comments": [],
+      "author": "Sulakshika",
+      "title": "Test Blog 2",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget volutpat est. Phasellus aliquet ex eu lorem feugiat eleifend. Duis congue fringilla lorem id sodales. Duis ultricies consequat maximus. Fusce metus tortor, venenatis dictum ex eget, malesuada venenatis risus. Nulla in lacus lectus. Aenean ornare nunc sit amet justo sollicitudin pretium eu at nibh. Vestibulum ac dapibus turpis. Nam laoreet ipsum non nibh pretium, vitae tempus lorem venenatis. Pellentesque hendrerit nisi tempor efficitur suscipit. Fusce pharetra ac nibh nec volutpat. Donec convallis lorem at ornare malesuada. Fusce erat purus, volutpat sed feugiat id, varius eget nisi. Maecenas maximus lorem ac elit consectetur, sit amet ullamcorper massa laoreet. In efficitur a est a vehicula. Praesent at volutpat diam.</p><p>Aenean consequat, est at dictum aliquet, arcu purus vulputate mi, ac vehicula libero erat et lacus. Pellentesque vulputate risus ac facilisis convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum facilisis ipsum nulla, ullamcorper placerat purus malesuada elementum. Nam cursus, elit vitae convallis tempor, mauris felis congue augue, sed pretium orci purus at tellus. Nam iaculis euismod nunc, ut pharetra urna pellentesque id. Aliquam erat volutpat. Pellentesque quis fringilla velit. Nulla facilisi. Nulla facilisi. Phasellus viverra placerat mattis. Fusce et ex massa. Duis ac turpis eu libero vulputate ullamcorper id non tortor. Etiam eu tristique sapien. Aliquam vel ex sit amet felis aliquam convallis quis ut justo.</p><p>Sed scelerisque arcu luctus mauris malesuada, efficitur laoreet nisl maximus. Phasellus orci sem, congue non ornare ut, imperdiet eu quam. Suspendisse potenti. Sed feugiat tincidunt justo, in tincidunt ligula pharetra et. Curabitur at consectetur augue, id fermentum sem. Integer commodo massa et ornare porta. Aliquam vulputate ac justo in congue. Curabitur ut rhoncus lectus, vel auctor neque. Sed venenatis tincidunt diam. Aliquam iaculis laoreet diam. Vivamus aliquet mollis sapien, non tristique lacus blandit et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc aliquam pulvinar ligula, id venenatis risus commodo luctus.</p><p>Curabitur hendrerit ligula sed ante rutrum efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean hendrerit neque orci, iaculis semper orci feugiat in. Curabitur diam risus, sodales at ligula ut, accumsan hendrerit arcu. Fusce placerat, enim eget tristique vulputate, neque metus pellentesque nunc, et finibus nibh mi id turpis. Morbi ultrices ipsum vitae velit scelerisque eleifend. Suspendisse et tellus eros.</p><p>Donec maximus egestas erat, ac consequat ligula tincidunt vitae. Donec volutpat felis ac dignissim gravida. Proin eget vehicula orci. Aliquam nulla leo, mollis sed ultricies a, blandit eget massa. Mauris id eros risus. Aenean mollis a urna quis porta. Phasellus faucibus tristique convallis. Donec id lectus vitae ante blandit tincidunt ut eget lectus. Phasellus nec justo non purus auctor scelerisque a quis dolor. Sed vitae blandit diam. Ut dictum neque nec enim aliquet aliquam. Ut fermentum tellus volutpat ipsum tincidunt porttitor eu vel orci.</p>",
+      "comments": [
+        {
+          "username": "Hima",
+          "comment": "Very nice. Very interesting. Can I have your number?"
+        },
+        {
+          "username": "Neranji",
+          "comment": "Ane nikan palayan bn yanna"
+        }
+      ],
       "id": 2
-    },
-    {
-      "author": "Sulakshi",
-      "title": "Image Blog",
-      "content": "This is my 1st Image Blog",
-      "comments": [],
-      "id": 3
     }
   ]
 }

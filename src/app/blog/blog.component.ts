@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
 import { BlogsService } from '../services/blogs.service';
@@ -8,11 +8,11 @@ import { BlogsService } from '../services/blogs.service';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css']
 })
+
 export class BlogComponent implements OnInit {
 
   constructor(public blogService:BlogsService, private router:Router) { }
 
-  
   ngOnInit(): void {
   }
 
