@@ -86,23 +86,56 @@ table {
 }
 
 #userImage {
-    width: 3%;
+    width: 15%;
+    margin-left: -50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    overflow: scroll;
+    background-color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-top: 8%;
+    padding: 10px;
+    margin-left: -15%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    box-shadow: 0 2px 6px 1px silver;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    padding: 15px 15px 15px 15px;
 }
 
 .post { 
     margin-left: 35%;
     color: rgb(231 114 255);
     font-size: 140%;
+    height: 20px;
 }
 
 .uploadTime {    
-    margin-left: 40%;
+    margin-left: 14%;
     font-size: 100%;
 }
 
 .postTitle {
     text-align: center;
     font-size: 170%;
+    height: 20px;
 }
 
 .postDetails {
@@ -115,9 +148,9 @@ table {
     text-align: center;
 }
 
-#postImage {
-    width: 15%;
-    border: 5px solid #82a9d8;;
+#postImage {    
+    width: 45%;
+    border: 5px solid #82a9d8;
  }
 
 .postBtns {
@@ -133,18 +166,18 @@ table {
 
 .postHeading {
     text-align: center;
-    margin-top: 1%;
+    margin-top: 16%;
     box-sizing: border-box;
     border: 3px solid;
     width: 230px;
-    margin-left: 42%;
+    margin-left: 134%;
     color: #f3005a;
     font-size: 210%;
 }
 
 .vl3 {
-    width: 25%;
-    margin-left: 37.5%;
+    width: 55%;
+    margin-left: 22.5%;
     border: 2px solid;
     color: #82a9d8;
     margin-top: 4.1px;

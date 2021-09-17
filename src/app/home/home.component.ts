@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { Router } from '@angular/router';
 import { faGlobe, faHeart, faComment, faDownload, faBookmark, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import { BlogsService } from '../services/blogs.service';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +20,15 @@ export class HomeComponent implements OnInit {
 
   nav = NavbarComponent;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public blogService:BlogsService) { }
 
   ngOnInit(): void {
+    this.blogService.fetchBlogs().then((res) => {
+      console.log(res);
+      this.blogService.blogsData = res;
+    }).catch((err) => {
+      console.log(err);
+    });
   }
 
 }

@@ -1,0 +1,25 @@
+{
+  "blogs": [
+    {
+      "author": "Neranji",
+      "title": "Test Blog",
+      "content": "<h3>Hi,</h3><h4>This is my <b>test blog</b>...</h4>",
+      "comments": [],
+      "id": 1
+    },
+    {
+      "author": "Nera",
+      "title": "Blog2",
+      "content": "My 2nd Blog",
+      "comments": [],
+      "id": 2
+    },
+    {
+      "author": "Sulakshi",
+      "title": "Image Blog",
+      "content": "This is my 1st Image Blog",
+      "comments": [],
+      "id": 3
+    }
+  ]
+}

@@ -29,6 +29,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { BlogComponent } from './blog/blog.component';
 import {MatInputModule} from '@angular/material/input';
 import { AngularEditorModule } from '@kolkov/angular-editor';
+import { ViewBlogComponent } from './view-blog/view-blog.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
     UserProfileComponent,
     OrganizationProfileComponent,
     ChatComponent,
-    BlogComponent
+    BlogComponent,
+    ViewBlogComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,6 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
     ReactiveFormsModule,
     MatInputModule,
     AngularEditorModule,
-
     HttpClientModule,
     ToastrModule.forRoot(),
 

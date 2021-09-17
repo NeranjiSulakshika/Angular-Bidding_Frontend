@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
+import { BlogsService } from '../services/blogs.service';
 
 @Component({
   selector: 'app-blog',
@@ -8,8 +10,9 @@ import { AngularEditorConfig } from '@kolkov/angular-editor';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  constructor(public blogService:BlogsService, private router:Router) { }
 
+  
   ngOnInit(): void {
   }
 
@@ -52,5 +55,25 @@ export class BlogComponent implements OnInit {
     sanitize: true,
     toolbarPosition: 'top',
 };
+
+username:string = "";
+title:string = "";
+content:string = "";
+
+post()
+{
+  let obj = {
+    author: this.username,
+    title: this.title,
+    content: this.content,
+    comments: []
+  }
+  this.blogService.postBlog(obj).then((res) => {
+    console.log(res);
+    this.router.navigate(['/home']);
+  }).catch((err) => {
+    console.log(err);
+  });
+}
 
 }

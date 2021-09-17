@@ -8,8 +8,12 @@ import { PostComponent } from './post/post.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { OrganizationProfileComponent } from './organization-profile/organization-profile.component';
 import { BlogComponent } from './blog/blog.component';
+import { ViewBlogComponent } from './view-blog/view-blog.component';
 
 const routes: Routes = [
+  {
+    path:'', pathMatch:'full', redirectTo:'home'
+  },
   { path:'home', 
     component: HomeComponent
   },
@@ -40,6 +44,10 @@ const routes: Routes = [
   {
     path:'blog', 
     component: BlogComponent
+  },
+  {
+    path:'view/:blogindex',
+    component: ViewBlogComponent
   }
 ];
 
