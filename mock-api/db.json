@@ -36,7 +36,16 @@
       "author": "Hima",
       "title": "new Blog",
       "content": "This is my blog",
-      "comments": [],
+      "comments": [
+        {
+          "username": "Hima",
+          "comment": "hii"
+        },
+        {
+          "username": "aaa",
+          "comment": "test"
+        }
+      ],
       "id": 3
     }
   ]

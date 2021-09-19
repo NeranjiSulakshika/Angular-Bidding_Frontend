@@ -2,7 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { Router } from '@angular/router';
 import { faGlobe, faHeart, faComment, faDownload, faBookmark, faShareAlt } from '@fortawesome/free-solid-svg-icons';
-import { BlogsService } from '../services/blogs.service';
+import { BlogsService } from '../services/blog-service/blogs.service'; 
 
 @Component({
   selector: 'app-home',
