@@ -63,9 +63,9 @@
 
         <div class="content-wrapper">
 
-          <div class="card" [routerLink]="'/view/' + i" *ngFor="let blog of blogService.blogsData; let i = index">
+          <div class="card"  *ngFor="let blog of blogService.blogsData; let i = index">
             
-            <h3 class="post">
+            <h3 class="post" [routerLink]="'/view/' + i">
               <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="rounded-circle"
                 id="userImage">
               {{blog.author}}
@@ -81,20 +81,21 @@
 
             <div class="vl3"></div>
 
+            {{numberOfLikes}}
             <div class="postBtns">
-              <button class="likeBtn">
+              <button class="btn btn-success" (click)="likeButtonClick()" id="likeBtn">
                 <fa-icon [icon]="faHeart" size="2x"></fa-icon>
               </button> &nbsp;               
-              <button class="commentBtn">
+              <button id="commentBtn">
                 <fa-icon [icon]="faComment" size="2x"></fa-icon>
               </button> &nbsp;
-              <button class="downloadBtn">
+              <button id="downloadBtn">
                 <fa-icon [icon]="faDownload" size="2x"></fa-icon>
               </button> &nbsp;
-              <button class="saveBtn">
+              <button id="saveBtn">
                 <fa-icon [icon]="faBookmark" size="2x"></fa-icon>
               </button> &nbsp;
-              <button class="shareBtn">
+              <button id="shareBtn">
                 <fa-icon [icon]="faShareAlt" size="2x" class="icn"></fa-icon>
               </button>
             </div>

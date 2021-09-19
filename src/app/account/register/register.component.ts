@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { NgForm } from '@angular/forms';
-import { User } from '../shared/user.model';
-import { UserService } from '../shared/user.service';
-import { ToastrService } from 'ngx-toastr';
-import { Router } from '@angular/router';
+import { UserService } from 'src/app/shared/user.service';
+import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 
 // declare var M: any;
@@ -22,14 +19,20 @@ export class RegisterComponent implements OnInit {
   user: any = {};
 
   loading = false;
+    
 
   // 'user': User;
   'emailPattern': "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
 
-  constructor(private userService: UserService, private toastr: ToastrService, private router: Router, private formBuilder: FormBuilder) { }
+  constructor(
+    private formBuilder: FormBuilder,
+        private route: ActivatedRoute,
+        private router: Router) { }
+
 
   ngOnInit() {
 
+    
     this.resetForm();
 
     // this.registrationForm = new FormGroup({
@@ -142,6 +145,9 @@ export class RegisterComponent implements OnInit {
     // this.user = Object.assign(this.user, this.registrationForm.value);
     // localStorage.setItem('Users', JSON.stringify(this.user));
   }
+
+
+  
 
   
 

@@ -158,7 +158,7 @@ table {
     margin-top: 5px;
 }
 
-.likeBtn, .commentBtn, .downloadBtn, .saveBtn, .shareBtn {
+#likeBtn, #commentBtn, #downloadBtn, #saveBtn, #shareBtn {
     background-color: white;
     color: #82a9d8;
     border: none;
@@ -199,3 +199,9 @@ table {
 .ads {
     margin-top: -75%;
 }
+
+
+
+
+
+/* json-server --watch mock-api/db.json */

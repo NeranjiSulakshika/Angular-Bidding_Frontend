@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, NgModule } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BlogsService } from '../services/blogs.service';
 
