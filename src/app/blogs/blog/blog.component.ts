@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
-import { BlogsService } from '../services/blogs.service';
+import { BlogsService } from 'src/app/services/blogs.service';
 
 @Component({
   selector: 'app-blog',

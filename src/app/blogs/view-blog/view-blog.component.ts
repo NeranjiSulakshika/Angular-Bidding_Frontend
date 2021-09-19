@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit, NgModule } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BlogsService } from '../services/blogs.service';
+import { BlogsService } from 'src/app/services/blogs.service';
 
 @Component({
   selector: 'app-view-blog',

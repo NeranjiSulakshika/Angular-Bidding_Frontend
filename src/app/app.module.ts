@@ -15,8 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { PostComponent } from './post/post.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { OrganizationProfileComponent } from './organization-profile/organization-profile.component';
+import { UserProfileComponent } from './account/user-profile/user-profile.component'; 
+import { OrganizationProfileComponent } from './organization/organization-profile/organization-profile.component'; 
 import { ChatComponent } from './chat/chat.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
@@ -26,10 +26,12 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RegisterComponent } from './account/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
-import { BlogComponent } from './blog/blog.component';
+import { BlogComponent } from './blogs/blog/blog.component'; 
 import {MatInputModule} from '@angular/material/input';
 import { AngularEditorModule } from '@kolkov/angular-editor';
-import { ViewBlogComponent } from './view-blog/view-blog.component';
+import { ViewBlogComponent } from './blogs/view-blog/view-blog.component';
+import { OrganizationLoginComponent } from './organization/organization-login/organization-login.component';
+import { OrganizationRegistrationComponent } from './organization/organization-registration/organization-registration.component'; 
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { ViewBlogComponent } from './view-blog/view-blog.component';
     OrganizationProfileComponent,
     ChatComponent,
     BlogComponent,
-    ViewBlogComponent
+    ViewBlogComponent,
+    OrganizationLoginComponent,
+    OrganizationRegistrationComponent
   ],
   imports: [
     BrowserModule,

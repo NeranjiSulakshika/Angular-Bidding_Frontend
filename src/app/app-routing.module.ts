@@ -5,10 +5,10 @@ import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component'; 
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { OrganizationProfileComponent } from './organization-profile/organization-profile.component';
-import { BlogComponent } from './blog/blog.component';
-import { ViewBlogComponent } from './view-blog/view-blog.component';
+import { UserProfileComponent } from './account/user-profile/user-profile.component'; 
+import { OrganizationProfileComponent } from './organization/organization-profile/organization-profile.component'; 
+import { BlogComponent } from './blogs/blog/blog.component'; 
+import { ViewBlogComponent } from './blogs/view-blog/view-blog.component';
 
 const routes: Routes = [
   {
