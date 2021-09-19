@@ -51,7 +51,7 @@
         <fa-icon [icon]="faCommentAlt" size="2x"></fa-icon>
       </button>
 
-      <button class="notificationBtn"  [routerLink]="['/login']">
+      <button class="notificationBtn"  [routerLink]="['/log']">
         <fa-icon [icon]="faBell" size="2x"></fa-icon>
       </button>       
 
@@ -67,7 +67,7 @@
           <button ngbDropdownItem [routerLink]="['/login']">Display Mode</button>
           <button ngbDropdownItem [routerLink]="['/login']">Create Organization</button>
           <div class="line"></div>
-          <button ngbDropdownItem [routerLink]="['/register']">Login/Logout</button>
+          <button ngbDropdownItem (click)="logout()">Login/Logout</button>
         </div>
       </div>
 

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faFacebook, faInstagram, faYoutube, faLinkedin, faSnapchat, faGooglePlus, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe, faHeart, faComment, faDownload, faBookmark, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import { User } from 'src/app/_models';
+import { AccountService } from 'src/app/_services';
 
 @Component({
   selector: 'app-user-profile',
@@ -9,6 +11,8 @@ import { faGlobe, faHeart, faComment, faDownload, faBookmark, faShareAlt } from 
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
+
+  user!: User;
 
   faGlobe = faGlobe;
   faFacebook = faFacebook;
@@ -26,7 +30,9 @@ export class UserProfileComponent implements OnInit {
   faBookmark = faBookmark;
   faShareAlt = faShareAlt;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private accountService: AccountService) {
+    this.user = this.accountService.userValue;
+   }
 
   ngOnInit(): void {
   }

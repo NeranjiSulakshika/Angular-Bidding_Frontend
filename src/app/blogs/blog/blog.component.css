@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 90vh;
-    overflow-y: scroll;
+    width: 50%;
+    height: auto;
     background: white;
+    box-shadow: 0 2px 6px 1px silver;
+    margin-top: 3.7%;
 }
 
 .content-wrapper {
@@ -14,6 +15,14 @@
     width: 40vw;
     margin-top: 20px;
     padding: 10px;
+}
+
+#lblHeading {
+    color: #4281F7;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 :host {
@@ -28,7 +37,8 @@
 }
 
 #lblInput {
-    color: black;
+    color: #4281F7;
+    font-weight: bold;
 }
 
 #inputLine {
@@ -46,10 +56,19 @@
 }
 
 #btnPost {
-    width: fit-content;
+    width: 20%;
     background-color: rgb(66, 129, 247);
-    font-size: 17px;
+    font-size: 20px;
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 40%;
+    height: 50px;
+    font-weight: bold;
 }
+
+.content {
+    margin-top: 2%;
+    background-color: aliceblue;
+}
+ 

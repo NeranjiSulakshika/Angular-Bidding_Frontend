@@ -24,7 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RegisterComponent } from './account/register/register.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BlogComponent } from './blogs/blog/blog.component'; 
 import {MatInputModule} from '@angular/material/input';
@@ -32,7 +32,9 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { ViewBlogComponent } from './blogs/view-blog/view-blog.component';
 import { OrganizationLoginComponent } from './organization/organization-login/organization-login.component';
 import { OrganizationRegistrationComponent } from './organization/organization-registration/organization-registration.component'; 
-
+import { fakeBackendProvider } from './_helpers';
+import { AlertComponent } from './_components';
+import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { OrganizationRegistrationComponent } from './organization/organization-r
     BlogComponent,
     ViewBlogComponent,
     OrganizationLoginComponent,
-    OrganizationRegistrationComponent
+    OrganizationRegistrationComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +72,8 @@ import { OrganizationRegistrationComponent } from './organization/organization-r
     AngularEditorModule,
     HttpClientModule,
     ToastrModule.forRoot(),
+    HttpClientModule,
+    ReactiveFormsModule,
 
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
@@ -87,7 +92,11 @@ import { OrganizationRegistrationComponent } from './organization/organization-r
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { appearance: 'fill' }
-    }
+    },
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
+    fakeBackendProvider
   ],
   bootstrap: [AppComponent]
 })

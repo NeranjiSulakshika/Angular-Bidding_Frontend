@@ -59,6 +59,10 @@ export class BlogComponent implements OnInit {
 username:string = "";
 title:string = "";
 content:string = "";
+time:string = "";
+numberOfLikes: number = 0;
+
+today = new Date();
 
 post()
 {
@@ -66,7 +70,10 @@ post()
     author: this.username,
     title: this.title,
     content: this.content,
-    comments: []
+    comments: [],
+    time: this.today.toLocaleString(),
+    numberOfLikes: this.numberOfLikes
+
   }
   this.blogService.postBlog(obj).then((res) => {
     console.log(res);
@@ -77,3 +84,4 @@ post()
 }
 
 }
+

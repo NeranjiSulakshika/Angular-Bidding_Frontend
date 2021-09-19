@@ -9,32 +9,34 @@
   <tr>
 
     <th class="left">
+
       <div class="btnOfferBlog">
-        <button class="mat-button-toggle" id="btnOffer" >Offer</button>
+        <button class="mat-button-toggle" id="btnOffer">Offer</button>
         <button class="mat-button-toggle" id="btnBlog" [routerLink]="['/blog']">Blog</button>
       </div>
+
       <div class="list">
+
         <h2>Top Blogger</h2>
         <div class="vl1"></div><br>
-        <ul style="list-style-type: none;">
-          <li><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
-            user_name</li><br>
-          <li><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
-            user_name</li><br>
-          <li><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
-            user_name</li>
-        </ul>
+
+        <div *ngFor="let blog of blogService.blogsData; let i = index" [routerLink]="'/view/' + i">
+          <ul style="list-style-type: none;">
+            <li class="img"><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
+              {{blog.author}}</li><br>
+          </ul>
+        </div>
 
         <h2 class="topHost">Top Host</h2>
         <div class="vl2"></div><br>
-        <ul style="list-style-type: none;">
-          <li><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
-            user_name</li><br>
-          <li><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
-            user_name</li><br>
-          <li><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
-            user_name</li>
-        </ul>
+
+        <div *ngFor="let blog of blogService.blogsData; let i = index" [routerLink]="'/view/' + i">
+          <ul style="list-style-type: none;">
+            <li class="img"><img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="imgBloggerHost">&nbsp;
+              {{blog.author}}</li><br>
+          </ul>
+        </div>
+
       </div>
     </th>
 
@@ -63,15 +65,15 @@
 
         <div class="content-wrapper">
 
-          <div class="card"  *ngFor="let blog of blogService.blogsData; let i = index">
-            
+          <div class="card" *ngFor="let blog of blogService.blogsData; let i = index">
+
             <h3 class="post" [routerLink]="'/view/' + i">
               <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="rounded-circle"
                 id="userImage">
               {{blog.author}}
             </h3>
 
-            <h4 class="uploadTime">Upload Time</h4>
+            <h4 class="uploadTime">{{blog.time}}</h4>
             <h2 class="postTitle">{{blog.title}}</h2>
             <!-- <h2 class="postDetails">{{blog.content}}</h2> -->
 
@@ -85,7 +87,7 @@
             <div class="postBtns">
               <button class="btn btn-success" (click)="likeButtonClick()" id="likeBtn">
                 <fa-icon [icon]="faHeart" size="2x"></fa-icon>
-              </button> &nbsp;               
+              </button> &nbsp;
               <button id="commentBtn">
                 <fa-icon [icon]="faComment" size="2x"></fa-icon>
               </button> &nbsp;
@@ -117,45 +119,3 @@
   </tr>
 
 </table>
-
-
-
-
-
-
-
-<!-- <div class="container">
-  <div class="content-wrapper">
-    <div class="card" *ngFor="let blog of blogService.blogsData">
-      <h3 class="post">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="rounded-circle" id="userImage">
-        {{blog.username}}
-      </h3>
-      <h4 class="uploadTime">Upload Time</h4>
-      <h2 class="postTitle">{{blog.title}}</h2>
-      <h2 class="postDetails">{{blog.content}}</h2>
-      <div class="postImage">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" id="postImage">
-      </div>
-      <div class="vl3"></div>
-      <div class="postBtns">
-        <button class="likeBtn">
-          <fa-icon [icon]="faHeart" size="2x"></fa-icon>
-        </button> &nbsp;
-        <button class="commentBtn">
-          <fa-icon [icon]="faComment" size="2x"></fa-icon>
-        </button> &nbsp;
-        <button class="downloadBtn">
-          <fa-icon [icon]="faDownload" size="2x"></fa-icon>
-        </button> &nbsp;
-        <button class="saveBtn">
-          <fa-icon [icon]="faBookmark" size="2x"></fa-icon>
-        </button> &nbsp;
-        <button class="shareBtn">
-          <fa-icon [icon]="faShareAlt" size="2x" class="icn"></fa-icon>
-        </button>
-      </div>
-      <br><br><br>
-    </div>
-  </div>
-</div> -->

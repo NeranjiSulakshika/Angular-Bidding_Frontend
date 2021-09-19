@@ -20,15 +20,17 @@ export class HomeComponent implements OnInit {
 
   nav = NavbarComponent;
 
+  
+  
+  username:string = "";
+  title:string = "";
+  content:string = "";
+  time:string = "";
   numberOfLikes : number = 0;
   
   likeButtonClick() {
     this.numberOfLikes++;
   }
-  
-  username:string = "";
-  title:string = "";
-  content:string = "";
 
   constructor(private router: Router, public blogService:BlogsService) { }
 
