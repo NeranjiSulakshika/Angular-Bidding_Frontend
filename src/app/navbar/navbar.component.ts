@@ -9,6 +9,8 @@ import { User } from '../_models';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
+
+
 export class NavbarComponent implements OnInit {
   faHome = faHome;
   faSearch = faSearch;

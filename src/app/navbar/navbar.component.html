@@ -33,31 +33,43 @@
 <nav class="navbar navbar-light">
   <div class="container-fluid">
 
-    <img src="https://www.freeiconspng.com/uploads/profile-icon-1.png"  class="logo">
+    <mat-icon matBadge="15" matBadgeColor="warn" class="logo">image</mat-icon>
+    <!-- <img src="https://www.freeiconspng.com/uploads/profile-icon-1.png"  class="logo"> -->
 
     <form class="d-flex">
       <button class="btn btn-outline-success" type="submit">
-        <fa-icon [icon]="faSearch"></fa-icon>
+        <!-- <mat-search-bar [formControl]="control"></mat-search-bar> -->
+        <mat-icon matBadge="15" matBadgeColor="warn">search</mat-icon>
+        <!-- <fa-icon [icon]="faSearch"></fa-icon> -->
       </button>
       <input class="form-control me-2" id="searchBar" type="search" placeholder="" aria-label="Search">
     </form>
 
     <div class="navItems">
       <button class="homeBtn" [routerLink]="['/home']">
-        <fa-icon [icon]="faHome" size="2x"></fa-icon>
+        <mat-icon matBadge="15" matBadgeColor="warn" size="2x">home</mat-icon>
+        <!-- <fa-icon [icon]="faHome" size="2x"></fa-icon> -->
       </button>
 
       <button class="messageBtn" [routerLink]="['/organizationProfile']">
-        <fa-icon [icon]="faCommentAlt" size="2x"></fa-icon>
+        <mat-icon matBadge="15" matBadgeColor="warn">forum</mat-icon>
+        <!-- <fa-icon [icon]="faCommentAlt" size="2x"></fa-icon> -->
+        <!-- <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+        <mat-icon matBadge="15" matBadgeColor="warn">forum</mat-icon>
+        <mat-icon matBadge="15" matBadgeColor="warn">notification_important</mat-icon>
+        <mat-icon matBadge="15" matBadgeColor="warn">image</mat-icon>
+        <fa-icon [icon]="faImage" size="2x"></fa-icon> -->
       </button>
 
       <button class="notificationBtn"  [routerLink]="['/log']">
-        <fa-icon [icon]="faBell" size="2x"></fa-icon>
+        <mat-icon matBadge="15" matBadgeColor="warn">notification_important</mat-icon>
+        <!-- <fa-icon [icon]="faBell" size="2x"></fa-icon> -->
       </button>       
 
       <div ngbDropdown class="d-inline-block" id="dropdown">
-        <button class="img-fluid rounded-circle z-depth-0" id="dropdownBasic1" ngbDropdownToggle>
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="img-fluid rounded-circle z-depth-0">
+        <button class="img-fluid rounded-circle z-depth-0" id="dropdownBasic1" ngbDropdownToggle>          
+        <mat-icon matBadge="15" matBadgeColor="warn">image</mat-icon>
+          <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="img-fluid rounded-circle z-depth-0"> -->
         </button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1" dropdown-menu-left>
           <button ngbDropdownItem [routerLink]="['/profile']">Profile</button>
