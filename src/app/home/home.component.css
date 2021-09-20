@@ -136,12 +136,12 @@ table {
     text-align: center;
     font-size: 170%;
     height: 20px;
+    color: #45aaea;
 }
 
 .postDetails {
     text-align: center;
-    color: #45aaea;
-    font-size: 170%;
+    font-size: 120%;
 }
 
 .postImage {

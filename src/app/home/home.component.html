@@ -75,7 +75,7 @@
 
             <h4 class="uploadTime">{{blog.time}}</h4>
             <h2 class="postTitle">{{blog.title}}</h2>
-            <!-- <h2 class="postDetails">{{blog.content}}</h2> -->
+            <h2 class="postDetails">{{blog.content | slice:0:50}}</h2>
 
             <div class="postImage">
               <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" id="postImage">
