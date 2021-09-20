@@ -67,7 +67,7 @@
 
           <div class="card" *ngFor="let blog of blogService.blogsData; let i = index">
 
-            <h3 class="post" [routerLink]="'/view/' + i">
+            <h3 class="post">
               <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="rounded-circle"
                 id="userImage">
               {{blog.author}}
@@ -88,7 +88,7 @@
               <button class="btn btn-success" (click)="likeButtonClick()" id="likeBtn">
                 <fa-icon [icon]="faHeart" size="2x"></fa-icon>
               </button> &nbsp;
-              <button id="commentBtn">
+              <button id="commentBtn" [routerLink]="'/view/' + i">
                 <fa-icon [icon]="faComment" size="2x"></fa-icon>
               </button> &nbsp;
               <button id="downloadBtn">

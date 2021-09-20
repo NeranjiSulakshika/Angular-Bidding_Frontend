@@ -1,0 +1,23 @@
+
+
+
+<div class="container">
+    <div class="content-wrapper">
+
+        <mat-form-field>
+            <mat-label id="lblInput">Username</mat-label>
+            <input [(ngModel)]="username" matInput />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label id="lblInput">Title</mat-label>
+            <input [(ngModel)]="title" matInput />
+        </mat-form-field>
+
+        <angular-editor [(ngModel)]="content" [config]="editorConfig"></angular-editor>
+
+        <button (click)="post()" mat-button id="btnPost">Post</button> 
+
+        
+    </div>
+</div>

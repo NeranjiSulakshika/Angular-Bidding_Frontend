@@ -1,0 +1,133 @@
+
+
+.heading {
+    overflow: visible;
+    padding-right: 48px;
+    position: relative;
+    width: 300px;
+}
+
+.needs-validation {
+    margin-left: 41%;
+    margin-top: 5%;
+    width: 22%;
+    background-color: #bfe6ff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+}
+
+#validationCustom01, #validationCustom02 {
+    max-width: 96.5%;
+    height: 45px;
+    margin-left: 2%;
+    border-radius: 7px;
+}
+
+#loginBtn {
+    width: 50%;
+    height: 48px;
+    margin-left: 25%;
+    background-color: #166fe5;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 4%;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+#createBtn {
+    color: #fff;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 16px;
+    margin-left: 3%;
+    width: 96.5%;
+    margin-bottom: 5px;
+    margin-top: 5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.line {
+    align-items: center;
+    border-bottom: 1px solid #c5c6c7;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+    width: 92%;
+    margin-bottom: 2%;
+}
+
+#day {
+    margin-left: 9%;
+    width: 120px;
+    padding-left: 41%;
+}
+
+#month {
+    margin-left: 20%;
+    padding-left: 37%;
+    width: 120px;
+}
+
+#year {
+    margin-left: 30%;
+    width: 120px;
+    padding-left: 33%;
+}
+
+#male {
+    width: 120px;
+    margin-left: 10%;
+}
+
+#female {
+    width: 120px;
+    margin-left: 20%;
+}
+
+#custom {
+    width: 120px;
+    margin-left: 30%;
+}
+
+#lblMale {
+    margin-left: 10%;
+}
+
+#lblFemale {
+    margin-left: 10%;
+}
+
+#lblCustom {
+    margin-left: 10%;
+}
+
+.inputMale {
+    margin-left: 27%;
+    margin-left: 25%;
+}
+
+.inputFemale {
+    margin-left: 20%;
+    margin-left: 15%;
+}
+
+.inputCustom {
+    margin-left: 20%;
+    margin-left: 13%;
+}
+
+input.ng-invalid.ng-dirty {
+    border-color: red !important;
+    box-shadow: 0 1px 0 0 red !important;
+}

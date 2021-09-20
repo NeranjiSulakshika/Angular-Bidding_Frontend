@@ -1,0 +1,168 @@
+
+table {    
+    font-family: sans-serif;
+}
+
+table {
+    height: 937px;
+}
+
+.td {
+    align-items: center;    
+    text-align: center;
+}
+
+.top {
+    width: 1919px;
+    height: 1px;
+}
+
+.left, .right {
+    width: 15%;
+}
+
+.left {    
+    background-color: #bbbbbb;
+}
+
+.topHost {
+    margin-top: 20%;
+}
+
+.profilePic {    
+    width: 75%;
+    margin-left: 25px;
+    border: 2px solid #52a0d2;
+}
+
+.middle {
+    height: 225px;
+    background-color: #bbbbbb;
+}
+
+.name {
+    margin-top: -240px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.points, .followers, .following {
+    color: rgb(233, 78, 130);
+    text-align: left;
+}
+
+.points {
+    margin-top: 72px;
+}
+
+.subCategory {
+    font-size: 120%;
+    margin-left: 10%;
+}
+
+.editProfile {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 170%;
+}
+
+.line {
+    border: 4px solid transparent;
+}
+
+.middleRight {
+    text-align: center;
+}
+
+.userName {
+    color: rgb(231 114 255);
+}
+
+.social {
+    padding-top: 70px;
+}
+
+#postImage {
+    margin-top: -3%;
+    margin-left: 3.1%;
+    border: 1px solid #52a0d2;
+    width: 12%;
+}
+
+#userImage {
+    width: 3%;
+}
+
+.btnGlobe, .btnFacebook, .btnInstagram, .btnYoutube, .btnLinkedin, .btnSnapchat, .btnGooglePlus, .btnDiscord {
+    background-color: #BBBBBB;
+    border: none;
+}
+
+.btnGlobe {
+    color: #108DC1;  
+}
+
+.btnFacebook {
+    color: #2758A1;
+}
+
+.btnInstagram {
+    color: #bc2a8d;
+}
+
+.btnYoutube {
+    color: #FF0000;
+}
+
+.btnLinkedin {
+    color: #0072b1;
+}
+
+.btnSnapchat {
+    color: #FFFC00;
+}
+
+.btnGooglePlus {
+    color: #db4a39;
+}
+
+.btnDiscord {
+    color: #7289d9;
+}
+
+#itemsBtns {
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 7%;
+    background-color: transparent;
+}
+
+.itemsLine {
+    background-color: #BBBBBB;
+    margin-top: -10.9%;
+    margin-left: .6%;
+}
+
+.firstCol {
+    width: 73%;
+}
+
+.secondCol {
+    width: 22%;
+    color: rgb(233, 78, 130);
+}
+
+.thirdCol {
+	width: 10%;
+}
+
+.fullName {
+    margin-left: 3%;
+}
+
+.manager {
+    margin-left: 18%;
+    color: rgb(214 112 146);
+}

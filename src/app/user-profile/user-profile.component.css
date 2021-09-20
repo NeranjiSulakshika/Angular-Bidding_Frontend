@@ -1,0 +1,204 @@
+
+table {    
+    font-family: sans-serif;
+}
+
+table {
+    height: 937px;
+}
+
+.td {
+    align-items: center;    
+    text-align: center;
+}
+
+.top {
+    width: 1919px;
+    height: 1px;
+}
+
+.left, .right {
+    width: 15%;
+}
+
+.left {    
+    background-color: #bbbbbb;
+}
+
+.topHost {
+    margin-top: 20%;
+}
+
+.profilePic {    
+    width: 75%;
+    margin-left: 25px;
+    border: 2px solid #52a0d2;
+}
+
+.middle {
+    height: 225px;
+    background-color: #bbbbbb;
+}
+
+.name {
+    margin-top: -240px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.points, .followers, .following {
+    color: rgb(233, 78, 130);
+    text-align: left;
+}
+
+.points {
+    margin-top: 72px;
+}
+
+.subCategory {
+    font-size: 120%;
+    margin-left: 10%;
+}
+
+.postHeading {
+    text-align: center;
+    margin-top: 1%;
+    box-sizing: border-box;
+    border: 3px solid;
+    width: 230px;
+    margin-left: 42%;
+    color: #f3005a;
+    font-size: 210%;
+}
+
+.editProfile {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 170%;
+}
+
+.line {
+    width: 30%;
+    margin-left: 35%;
+    border: 5px solid;
+    color: #ffffff;
+}
+
+.middleRight {
+    text-align: center;
+    /* padding-bottom: 35px; */
+}
+
+.userName {
+    color: rgb(231 114 255);
+    /* margin-top: 22px; */
+}
+
+.social {
+    padding-top: 70px;
+}
+
+.stories {
+    background-color: #bbbbbb;
+    margin-left: 10px;
+    margin-top: -1%;
+    padding-top: 3%;
+}
+
+#story {
+    margin-top: -3%;
+    margin-left: 3.1%;
+    border: 1px solid #52a0d2;
+    width: 6%;
+}
+
+#userImage {
+    width: 3%;
+}
+
+.post { 
+    margin-left: 35%;
+    color: rgb(231 114 255);
+    font-size: 140%;
+}
+
+.uploadTime {    
+    margin-left: 40%;
+    font-size: 100%;
+}
+
+.postTitle {
+    text-align: center;
+    font-size: 170%;
+}
+
+.postDetails {
+    text-align: center;
+    color: #45aaea;
+    font-size: 170%;
+}
+
+.postImage {
+    text-align: center;
+}
+
+#postImage {
+    width: 20%;
+    border: 5px solid #82a9d8;;
+ }
+
+.vl1 {
+    width: 25%;
+    margin-left: 37.5%;
+    border: 2px solid;
+    color: #82a9d8;
+    margin-top: 4.1px;
+}
+
+.postBtns {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.likeBtn, .commentBtn, .downloadBtn, .saveBtn, .shareBtn {
+    background-color: white;
+    color: #82a9d8;
+    border: none;
+}
+
+.btnGlobe, .btnFacebook, .btnInstagram, .btnYoutube, .btnLinkedin, .btnSnapchat, .btnGooglePlus, .btnDiscord {
+    background-color: #BBBBBB;
+    border: none;
+}
+
+.btnGlobe {
+    color: #108DC1;  
+}
+
+.btnFacebook {
+    color: #2758A1;
+}
+
+.btnInstagram {
+    color: #bc2a8d;
+}
+
+.btnYoutube {
+    color: #FF0000;
+}
+
+.btnLinkedin {
+    color: #0072b1;
+}
+
+.btnSnapchat {
+    color: #FFFC00;
+}
+
+.btnGooglePlus {
+    color: #db4a39;
+}
+
+.btnDiscord {
+    color: #7289d9;
+}
