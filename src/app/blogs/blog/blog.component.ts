@@ -20,7 +20,7 @@ export class BlogComponent implements OnInit {
     editable: true,
       spellcheck: true,
       height: 'auto',
-      minHeight: '350px',
+      minHeight: '190px',
       maxHeight: 'auto',
       width: 'auto',
       minWidth: '0',

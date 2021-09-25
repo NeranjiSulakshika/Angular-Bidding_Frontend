@@ -23,6 +23,7 @@
     font-size: 30px;
     text-align: center;
     margin-bottom: 5%;
+    height: 15px;
 }
 
 :host {
@@ -70,5 +71,9 @@
 .content {
     margin-top: 2%;
     background-color: aliceblue;
+}
+
+.mat-form-field {
+    height: 55px;
 }
  
